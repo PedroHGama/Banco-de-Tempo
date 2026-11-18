@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área de Aprendizado | Aluno</title>
 
+    <!-- Nova estilização -->
+    <link rel="stylesheet" href="../css/portal-theme.css">
     <!-- Tailwind CSS & Font Awesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,28 +19,40 @@
 <body class="min-h-screen flex flex-col bg-slate-100 text-slate-800 antialiased">
 
     <!-- NAVEGAÇÃO / HEADER -->
-    <header class="bg-sky-900 text-white shadow-lg sticky top-0 z-30">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-sky-600 flex items-center justify-center text-white font-bold text-xl shadow">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                </div>
-                <div>
-                    <span class="text-xs text-sky-300 font-bold uppercase tracking-wider block">Área do Aluno</span>
-                    <h1 class="text-base font-bold text-white leading-none">Aprender & Estudar</h1>
-                </div>
-            </div>
+    
+<header class="bg-sky-900 text-white shadow-lg sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
 
-            <div class="flex items-center gap-3">
-                <button onclick="showView('view-catalog')" class="text-xs bg-sky-800 hover:bg-sky-700 text-white px-3 py-2 rounded-lg border border-sky-700 transition">
-                    <i class="fa-solid fa-book-open mr-1"></i> Catálogo de Cursos
-                </button>
-                <button onclick="showView('view-request-form')" class="text-xs bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-3 py-2 rounded-lg transition">
-                    <i class="fa-solid fa-plus mr-1"></i> Pedir Novo Assunto
-                </button>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-sky-600 flex items-center justify-center text-white font-bold text-xl shadow">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+                <span class="text-xs text-sky-300 font-bold uppercase tracking-wider block">Área do Aluno</span>
+                <h1 class="text-base font-bold text-white leading-none">Aprender & Estudar</h1>
             </div>
         </div>
-    </header>
+
+        <div class="flex items-center gap-3">
+
+            <!-- Botão Voltar para Home -->
+            <a href="../projeto/index.html"
+               class="text-xs bg-transparent hover:bg-sky-800 text-white px-3 py-2 rounded-lg border border-sky-600 transition">
+                <i class="fa-solid fa-arrow-left mr-1"></i> Página inicial
+            </a>
+
+            <button onclick="showView('view-catalog')" class="text-xs bg-sky-800 hover:bg-sky-700 text-white px-3 py-2 rounded-lg border border-sky-700 transition">
+                <i class="fa-solid fa-book-open mr-1"></i> Catálogo de Cursos
+            </button>
+
+            <button onclick="showView('view-request-form')" class="text-xs bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-3 py-2 rounded-lg transition">
+                <i class="fa-solid fa-plus mr-1"></i> Pedir Novo Assunto
+            </button>
+
+        </div>
+    </div>
+</header>
+
 
     <!-- CONTAINER PRINCIPAL -->
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
